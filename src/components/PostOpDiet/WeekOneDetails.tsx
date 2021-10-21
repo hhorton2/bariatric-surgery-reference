@@ -1,4 +1,13 @@
-import {Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography,} from "@mui/material";
+import {
+  Paper,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
+  Typography,
+} from "@mui/material";
 
 export default function WeekOneDetails(): JSX.Element {
   return (

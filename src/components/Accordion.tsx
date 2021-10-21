@@ -1,4 +1,9 @@
-import {Accordion as MUIAccordion, AccordionDetails, AccordionSummary, Typography,} from "@mui/material";
+import {
+    Accordion as MUIAccordion,
+    AccordionDetails,
+    AccordionSummary,
+    Typography,
+} from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import React from "react";
 
