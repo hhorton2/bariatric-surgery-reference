@@ -60,7 +60,7 @@ export default function WeekOneDetails(): JSX.Element {
       </Typography>
       <br />
       <TableContainer component={Paper}>
-        <Table aria-label="simple table">
+        <Table size={"small"} aria-label="simple table">
           <TableHead>
             <TableRow>
               <TableCell>Food Category</TableCell>
@@ -70,7 +70,7 @@ export default function WeekOneDetails(): JSX.Element {
           </TableHead>
           <TableBody>
             <TableRow
-              sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+                sx={{"&:last-child td, &:last-child th": {border: 0}}}
             >
               <TableCell>Thin clear & full liquids </TableCell>
               <TableCell>

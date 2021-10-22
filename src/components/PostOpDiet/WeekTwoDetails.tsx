@@ -60,7 +60,7 @@ export default function WeekTwoDetails(): JSX.Element {
         <hr/>
         <br/>
         <TableContainer component={Paper}>
-          <Table aria-label="simple table">
+          <Table size={"small"} aria-label="simple table">
             <TableHead>
               <TableRow>
                 <TableCell>Food Category</TableCell>
@@ -229,7 +229,7 @@ export default function WeekTwoDetails(): JSX.Element {
         <Typography variant={"h6"}>Puree Phase Sample Menu</Typography>
         <br/>
         <TableContainer component={Paper}>
-          <Table aria-label="simple table">
+          <Table size={"small"} aria-label="simple table">
             <TableHead>
               <TableRow>
                 <TableCell>Meal</TableCell>

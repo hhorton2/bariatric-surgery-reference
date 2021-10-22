@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/bariatric-surgery-reference/static/css/main.a617e044.chunk.css",
-    "main.js": "/bariatric-surgery-reference/static/js/main.7f49aaeb.chunk.js",
-    "main.js.map": "/bariatric-surgery-reference/static/js/main.7f49aaeb.chunk.js.map",
+    "main.js": "/bariatric-surgery-reference/static/js/main.21695394.chunk.js",
+    "main.js.map": "/bariatric-surgery-reference/static/js/main.21695394.chunk.js.map",
     "runtime-main.js": "/bariatric-surgery-reference/static/js/runtime-main.99084d8c.js",
     "runtime-main.js.map": "/bariatric-surgery-reference/static/js/runtime-main.99084d8c.js.map",
     "static/css/2.2174e8bc.chunk.css": "/bariatric-surgery-reference/static/css/2.2174e8bc.chunk.css",
@@ -24,6 +24,6 @@
     "static/css/2.2174e8bc.chunk.css",
     "static/js/2.3e27aa58.chunk.js",
     "static/css/main.a617e044.chunk.css",
-    "static/js/main.7f49aaeb.chunk.js"
+    "static/js/main.21695394.chunk.js"
   ]
 }
