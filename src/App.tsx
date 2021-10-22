@@ -17,6 +17,7 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import Divider from "@mui/material/Divider";
+import BmiCalculator from "./components/BmiCalculator";
 
 const DrawerHeader = styled("div")(({ theme }) => ({
   display: "flex",
@@ -26,12 +27,14 @@ const DrawerHeader = styled("div")(({ theme }) => ({
   ...theme.mixins.toolbar,
   justifyContent: "flex-end",
 }));
-
 function App() {
+  const pages = {
+    postOpDiet: "Post-op Diet",
+    bmiCalculator: "BMI Calculator",
+  };
   const theme = useTheme();
   const [open, setOpen] = useState(false);
-  const postOpDietName = "Post-op Diet";
-  const [openPage, setOpenPage] = useState(postOpDietName);
+  const [openPage, setOpenPage] = useState(pages.postOpDiet);
   const handleDrawerOpen = () => {
     setOpen(true);
   };
@@ -84,22 +87,23 @@ function App() {
         </DrawerHeader>
         <Divider />
         <List>
-          {[postOpDietName].map((text, index) => (
-            <ListItem
-              button
-              key={text}
-              onClick={() => {
-                setOpenPage(text);
-                setOpen(false);
-              }}
-            >
-              <ListItemText primary={text} />
-            </ListItem>
+          {[pages.postOpDiet, pages.bmiCalculator].map((text, index) => (
+              <ListItem
+                  button
+                  key={text}
+                  onClick={() => {
+                    setOpenPage(text);
+                    setOpen(false);
+                  }}
+              >
+                <ListItemText primary={text}/>
+              </ListItem>
           ))}
         </List>
       </Drawer>
-      <div style={{ marginTop: 5 }}>
-        {openPage === postOpDietName && <PostOpDiet />}
+      <div style={{marginTop: 5}}>
+        {openPage === pages.postOpDiet && <PostOpDiet/>}
+        {openPage === pages.bmiCalculator && <BmiCalculator/>}
       </div>
     </Box>
   );
